@@ -1,0 +1,118 @@
+.main-container{
+    background-color: black;
+    height: 158vh;
+    color: white;
+}
+.searchBar{
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: rgba(8, 8, 220, 0.25) 0px 30px 60px -12px inset, rgba(5, 24, 235, 0.3) 0px 18px 36px -18px inset;
+}
+.searchBar:hover{
+    box-shadow: rgba(235, 8, 193, 0.25) 0px 30px 60px -12px inset, rgba(244, 11, 193, 0.3) 0px 18px 36px -18px inset;
+}
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.bottom-container{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.card{
+    background: rgba(35, 35, 35, 1);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+               0px 0px 10px rgba(255, 255, 255, 1), 
+			   0px 0px 15px rgb(255, 255, 255),
+			   0px 0px 20px rgba(73, 255, 24, 1),
+			   0px 0px 30px rgba(73, 255, 24, 1),
+			   0px 0px 40px rgba(73, 255, 24, 1),
+			   0px 0px 55px rgba(73, 255, 24, 1),
+			   0px 0px 75px rgba(73, 255, 24, 1);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(32, 231, 10) 0px 0px 0px 3px;
+}
+.card:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+               0px 0px 10px rgba(255, 255, 255, 1), 
+			   0px 0px 15px rgb(255, 255, 255),
+			   0px 0px 20px rgb(238, 4, 247),
+			   0px 0px 30px rgba(238, 4, 247),
+			   0px 0px 40px rgba(238, 4, 247),
+			   0px 0px 55px rgba(238, 4, 247),
+			   0px 0px 75px rgba(238, 4, 247);
+}
+.img-container img{
+    height: 200px;
+    width: 170px;
+}
+.logo img{
+    height: 40px;
+    width: 50px;
+}
+.logo{
+    font-size: 20px;
+    color: rgba(167, 221, 60, 1);
+  text-shadow: 2px 0px 0px rgba(128, 0, 64, 1), 
+               3px 2px 0px rgba(77, 0, 38, 0.5), 
+			   3px 0px 3px rgba(255, 0, 43, 1), 
+			   5px 0px 3px rgba(128, 0, 21, 1), 
+			   6px 2px 3px rgba(77, 0, 13, 0.5), 
+			   6px 0px 9px rgba(255, 85, 0, 1), 
+			   8px 0px 9px rgba(128, 42, 0, 1), 
+			   9px 2px 9px rgba(77, 25, 0, 0.5), 
+			   9px 0px 18px rgba(255, 213, 0, 1), 
+			   11px 0px 18px rgba(128, 106, 0, 1), 
+			   12px 2px 18px rgba(77, 66, 0, 0.5), 
+			   12px 0px 30px rgba(212, 255, 0, 1), 
+			   14px 0px 30px rgba(106, 128, 0, 1), 
+			   15px 2px 30px rgba(64, 77, 0, 0.5), 
+			   15px 0px 45px rgba(128, 255, 0, 1), 
+			   17px 0px 45px rgba(64, 128, 0, 1), 
+			   17px 2px 45px rgba(38, 77, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+}
+.register-button{
+    height: 45px;
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    text-shadow: 5px 5px 5px greenyellow;
+}
+.register-button:hover{
+    color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+               0px 0px 10px rgba(255, 255, 255, 1), 
+			   0px 0px 15px rgb(255, 255, 255),
+			   0px 0px 20px rgb(238, 4, 247),
+			   0px 0px 30px rgba(238, 4, 247),
+			   0px 0px 40px rgba(238, 4, 247),
+			   0px 0px 55px rgba(238, 4, 247),
+			   0px 0px 75px rgba(238, 4, 247);
+}
+.welcomeMessage{
+    text-align: center;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 1), 
+               0px 0px 10px rgba(255, 255, 255, 1), 
+			   0px 0px 15px rgb(255, 255, 255),
+			   0px 0px 20px rgb(238, 4, 247),
+			   0px 0px 30px rgba(238, 4, 247),
+			   0px 0px 40px rgba(238, 4, 247),
+			   0px 0px 55px rgba(238, 4, 247),
+			   0px 0px 75px rgba(238, 4, 247);
+}
