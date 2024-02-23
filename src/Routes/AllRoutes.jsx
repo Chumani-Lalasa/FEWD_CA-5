@@ -7,6 +7,7 @@ import store from '../Redux/Store';
 
 const AllRoutes = () => {
   return (
+    // setting paths to the components
     <div>
       <Routes>
         <Route 

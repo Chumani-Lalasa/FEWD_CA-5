@@ -7,10 +7,6 @@ import AllRoutes from './Routes/AllRoutes'
 function App() {
 
   return (
-    // <Provider store={store}>
-    //   <BookList />
-    //   <Register />
-    // </Provider>
     <Provider store={store}>
       <BrowserRouter>
         <AllRoutes />

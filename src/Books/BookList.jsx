@@ -10,7 +10,7 @@ function BookList() {
   const [showWelcomeMessage,setShowWelcomeMessage] = useState(false);
   const [userName, setUserName] = useState('');
   const location = useLocation();
-  // const {showWelcomeMessage,userName} = location.state || {};
+  // fetching data
   const getData = () => {
     axios
       .get(`https://reactnd-books-api.udacity.com/books`, {
@@ -18,10 +18,9 @@ function BookList() {
       })
       .then((res) => setBookData(res.data.books))
       .catch((err) => {
-        console.warn("Error");
+        console.warn(err,"Error");
       });
   };
-  console.log(bookData);
   useEffect(() => {
     getData();
     const {showWelcomeMessage,userName} = location.state || {};
@@ -35,6 +34,7 @@ function BookList() {
   const handleSearchChange = (event) => {
     setSearchText(event.target.value);
   };
+  // getting filtered data
   const filteredBooks = bookData.filter((book) =>
     book.title.toLowerCase().startsWith(searchText.toLowerCase())
   );
@@ -66,7 +66,7 @@ function BookList() {
           </Link>
         </div>
       </div>
-      {/* <div className="bottom-container"> */}
+      {/* card container */}
         <div className="bottom-container">
           {filteredBooks.map((el, i) => (
             <div key={i} className="card">

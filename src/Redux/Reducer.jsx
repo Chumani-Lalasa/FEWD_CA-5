@@ -4,6 +4,7 @@ const initialState = {
     formData:null,
 };
 const formReducer = (state=initialState,action) => {
+    // setting the form data
     switch(action.type){
         case SET_FORM_DATA:
             return{

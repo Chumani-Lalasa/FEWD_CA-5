@@ -3,9 +3,9 @@ import {useForm} from 'react-hook-form'
 import { setFormData } from '../Redux/Action';
 import { connect } from 'react-redux';
 import './Register.css'
-// import { Redirect } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 const Register = ({setFormData}) => {
+    //methods from useForm
     const {register,
         handleSubmit,
         formState:{errors,isSubmitSuccessful},
@@ -40,12 +40,14 @@ const Register = ({setFormData}) => {
           <p>Kalvium Books</p> 
         </div>
         <div className='card-container'>
+            {/* show the success message */}
         <div className='registration-status'>
         {isSubmitSuccessful ? showSuccessMessage&&<div>Registration Successful</div>:null}
     </div>
     <div className='form-conatiner'>
         <h1 className='create'>Create Account</h1>
         <form action="" onSubmit={handleSubmit(onSubmit)} className='form'>
+            {/* name input */}
             <div className='input-container'>
                 <input 
                     type="text" 
@@ -70,6 +72,7 @@ const Register = ({setFormData}) => {
                 {errors.name && <p style={{color:"red",fontSize:"14px"}}>{errors.name.message}</p>}
             </div>
             <div className='input-container'>
+                {/* email input */}
                 <input 
                     type="text" 
                     className='textBox'
@@ -92,6 +95,7 @@ const Register = ({setFormData}) => {
                 {errors.email && <p style={{color:"red",fontSize:"14px"}}>{errors.email.message}</p>}
             </div>
             <div className='input-container'>
+                {/* password input */}
                 <input 
                     type="password" 
                     className='textBox'
@@ -113,6 +117,7 @@ const Register = ({setFormData}) => {
                 {errors.password && <p style={{color:"red",fontSize:"14px"}}>{errors.password.message}</p>}
             </div>
             <div className='input-container'>
+                {/* repeat password */}
                 <input 
                     type="password" 
                     className='textBox'
@@ -125,6 +130,7 @@ const Register = ({setFormData}) => {
                 {errors.repeatPassword && <p style={{color:"red",fontSize:"14px"}}>{errors.repeatPassword.message}</p>}
             </div>
             <div className='input-container'>
+                {/* checkbox */}
                 <input type="checkbox"
                     {...register('agree',{
                         required:'Please agree to continue'
@@ -133,6 +139,7 @@ const Register = ({setFormData}) => {
                     {errors.agree && <p style={{color:"red",fontSize:"14px"}}>{errors.agree.message}</p>}
             </div>
             <div className='input-container'>
+                {/* sign btn */}
                 <button type='submit' className='sign-btn'>
      {redirect && <Navigate to="/" state={{showWelcomeMessage:redirect,userName}}/>}   
 
